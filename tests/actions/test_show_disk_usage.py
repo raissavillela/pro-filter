@@ -1,8 +1,6 @@
-import pytest
 from pro_filer.actions.main_actions import show_disk_usage
 
 
-@pytest.fixture
 def test_show_disk_usage_single_file(tmp_path, capsys, monkeypatch):
     file_1 = tmp_path / "file1.txt"
     file_1.write_text("Hello World")

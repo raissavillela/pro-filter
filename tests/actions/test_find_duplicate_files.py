@@ -2,7 +2,6 @@ import pytest
 from pro_filer.actions.main_actions import find_duplicate_files
 
 
-@pytest.fixture
 def test_no_duplicate_files(tmp_path):
     file1 = tmp_path / "file1.txt"
     file1.write_text("Content of file 1")
